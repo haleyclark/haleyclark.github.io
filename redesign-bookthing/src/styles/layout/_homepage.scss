@@ -1,0 +1,38 @@
+.homepage-grid__hero {
+    width: 100%;
+    padding: 5vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(/images/bookthing-3--original.jpg);
+    // https://stackoverflow.com/questions/50272586/background-color-over-background-image-whats-the-cause //
+    background-size: cover;
+    font-size: 200%;
+    color: $off-white;
+}
+
+.homepage-grid__hours {
+    background-color: $red;
+    border-bottom: 1px solid #dfdfdf;
+    // would like to add a border-bottom to all of these? the rows???
+
+
+    h2 {
+        grid-area: 1 / 1 / 2 / 3;
+        text-align: center;
+    }
+}
+
+.homepage-grid__location {
+    background-color: $green;
+    text-align: center;
+
+    p {
+        font-size: 150%;
+    }
+}
+
+
+@media (max-width: $display-nav) {
+    .homepage-grid__hours {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+}

@@ -1,0 +1,33 @@
+// https://donate.mozilla.org/en-US/ inspiration
+form {
+    padding: 2vw;
+}
+        fieldset,
+        .fieldset{ 
+            border: 0;
+            width: 80%; 
+        margin-bottom: 2vh;}
+
+            input{
+                background: $off-white;
+                border: 1px solid;
+            }
+
+            legend {
+                margin-bottom:10px;
+                font-weight: bold;
+            }
+
+            label {
+                margin: 0 10px  10px;
+            }
+
+.donation_frequency {
+    min-width: 115px;
+}
+
+input[type-="button"],
+input[type-="submit"],
+input[type-="reset"] {
+
+}

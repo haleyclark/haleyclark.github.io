@@ -1,0 +1,45 @@
+// main grid
+.main-grid {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: .3fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+// main grid specific areas
+.main-grid__content {
+  grid-column: 2 / span 4;
+  grid-row: auto;
+  // padding: 20px;
+}
+
+// consistent styles
+header {
+  grid-column: 1 / 2;
+}
+
+nav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+// main grid mobile
+@media (max-width: $display-nav) {
+  .main-grid {
+    grid-template-areas:
+      "header nav"
+      "content content"
+      "content content"
+      "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto minmax(auto, auto) 1fr minmax(auto, auto) auto;
+  }
+
+}

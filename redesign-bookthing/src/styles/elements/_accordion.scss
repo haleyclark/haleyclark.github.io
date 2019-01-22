@@ -1,0 +1,27 @@
+button {
+    display: block;
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 2px 0;
+    padding: 1em;
+    color: $off-black;
+}
+
+.js-accordion__trigger {
+    transition: color 200ms ease 0s;
+
+    &active {
+        color: lighten($color: $off-black, $amount: 10%);
+    }
+
+    //  &[aria-expanded="true"] {
+    //      transition: 200ms ease 0s;
+    //  }
+    // this doesn't seme to be doing anything lol. probably not putting it in the right space.
+}
+
+.js-accordion__content {
+    margin-left: 35px;
+}

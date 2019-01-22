@@ -1,0 +1,11 @@
+header {
+    padding: 1rem;
+}
+
+@media (max-width: $display-nav) {
+    header {
+        img {
+            width: 100px;
+        }
+    }
+}

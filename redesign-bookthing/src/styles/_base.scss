@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  // transition: all .3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  font-family: $body-font;
+}
+
+a {
+  color: $blue;
+  text-decoration: underline;
+
+  &:hover {
+    color: lighten($color: $blue, $amount: 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+header,
+nav,
+footer {
+  background-color: $off-white;
+}
